@@ -1,10 +1,14 @@
+html {
+    font-size: 12px;
+}
+
 h1 {
     color: darkslategrey;
-    font-size: large;
+    font-size: 4.8rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 p {
     color: steelblue;
-    font-size: small;
+    font-size: 1.0rem;
 }
