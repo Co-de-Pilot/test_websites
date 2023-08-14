@@ -11,4 +11,6 @@ h1 {
 p {
     color: steelblue;
     font-size: 1.0rem;
+    text-shadow: 0cap;
+    background-color: azure;
 }
