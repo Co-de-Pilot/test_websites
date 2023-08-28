@@ -5,9 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>About us</title>
+    <style>
+        section, fieldset {
+            margin: 10px;
+        }
+        label {
+            user-select: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Rólunk szól</h1>
     <p><a href="index.html">Vissza a főoldalra</a></p>
+    <p><a href="index.html#banner">Ugrás a képhez</a></p>
+
+    <div>
+        <form action="https://formspree.io/f/xdorgvvk" method="POST">
+            <fieldset>
+                <legend>Személyes adatok megadása</legend>
+                    <label>Vezetéknév:
+                        <input type="text" name="Vezetéknév" placeholder="Vezetéknév" />
+                    </label>
+                    <label>Keresztnév#1:
+                        <input type="text" name="Keresztnév" placeholder="Keresztnév" />
+                    </label>
+                    <label>Keresztnév#2:
+                        <input type="text" name="Keresztnév" placeholder="Keresztnév" />
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Bejelentkezési adatok megadása</legend>
+                    <label>Felhasználónév:
+                        <input type="text" name="Felhasználónév" placeholder="Felhasználónév" />
+                    </label>
+                    <label>Jelszó:
+                        <input type="password" name="jelszó" placeholder="Jelszó" />
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Megjegyzés</legend>
+                    <label>Megjegyzés:
+                        <textarea name="Megjegyzés" cols="30" rows="3">Megjegyzés</textarea>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Nehézség</legend>
+                    <label>Nehézségi szint:
+                        <select name="Nehézség">
+                            <option value="0">Könnyű</option>
+                            <option value="1">Közepes</option>
+                            <option value="2">Nehéz</option>
+                        </select>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Jogosultsági szint</legend>
+                    <label>
+                        <input type="radio" name="jogosultsag" value="0">
+                        Felhasználó
+                    </label>
+                    <label>
+                        <input type="radio" name="jogosultsag" value="1">
+                        Vezető
+                    </label>
+                    <label>
+                        <input type="radio" name="jogosultsag" value="2">
+                        Adminisztrátor
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>További engedélyek:</legend>
+                <label>
+                    <input type="checkbox" name="autó_behajtás" value="igen">
+                    Autóval behajthat
+                </label>
+                <label>
+                    <input type="checkbox" name="szolg_gjmü_vezetés" value="igen">
+                    Szolgálati gépjárművet vezethet
+                </label>
+                <label>
+                    <input type="checkbox" name="oldalfegyver" value="igen">
+                    Oldalfegyvere van
+                </label>
+                <label>
+                    <input type="checkbox" name="ugyelet" value="igen">
+                    Ügyeleti szolgálatot adhat
+                </label>
+            </fieldset>
+            <div>
+                <input type="datetime-local" name="datetime-local">
+            </div>
+            <div>
+                <input type="submit" value="Beküldés" />
+            </div>
+        </form>
+
+    </div>
 </body>
 </html>
